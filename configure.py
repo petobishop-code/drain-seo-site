@@ -18,5 +18,5 @@ for file in pages:
 xml='<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'+''.join('  <url><loc>'+escape(u)+'</loc></url>\n' for u in urls)+'</urlset>\n'
 (root/'sitemap.xml').write_text(xml,encoding='utf-8')
 (root/'robots.txt').write_text('User-agent: *\nAllow: /\nSitemap: '+SITE_URL+'/sitemap.xml\n',encoding='utf-8')
-(root/'naver-submit-urls.txt').write_text('\n'.join(urls[1:]),encoding='utf-8')
+(root/'naver-submit-urls.txt').write_text('\n'.join(u for u in urls if u != SITE_URL + '/'),encoding='utf-8')
 print('Configured',len(urls),'pages and sitemap:',SITE_URL)
