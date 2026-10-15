@@ -1,0 +1,13 @@
+업데이트: 2026-10-15
+
+1) 첫 화면 지역 카드의 표기를 "광복동"에서 "광복동하수구막힘"처럼 20개 모두 변경했습니다.
+2) 80개 서비스 페이지의 <title>, H1, JSON-LD WebPage.name에 "배관 역류" 문구를 추가했습니다.
+3) page-list.csv의 80개 제목과 첫 화면 제목도 함께 변경했습니다.
+4) 기존 사진, 본문, URL, 내부링크는 유지했습니다.
+
+GitHub Desktop 사용법:
+A. update_only.zip 파일을 풀어 나오는 index.html, page-list.csv와 80개 동 폴더를 기존 drain-seo-site 저장소에 덮어쓰기 합니다.
+B. GitHub Desktop에서 변경 사항을 확인하고 Commit to main, Push origin을 누릅니다.
+C. Vercel 자동 배포 후 새로고침하여 수정된 제목을 확인합니다.
+
+주의: 새 도메인이 정해진 뒤에는 configure.py의 SITE_URL을 설정하고 다시 실행하여 canonical과 sitemap.xml을 생성해야 합니다.
