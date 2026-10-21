@@ -47,3 +47,15 @@ body.premium-home .pro-service h3 {font-weight:690 !important;}
 body.premium-home .pro-process strong {font-weight:650 !important;}
 body.premium-home .pro-caption {font-weight:700 !important;}
 body.premium-home .area-index {font-weight:700 !important;}
+
+/* 80 pages unified typography and readable layout */
+body.premium-detail .overview .split-copy>div>p{margin:0 0 19px!important;line-height:1.9!important;max-width:680px!important;letter-spacing:-.02em!important}
+body.premium-detail .overview .split-copy>div>p.intro-lead{font-size:17px!important;font-weight:480!important;color:#2E3B4E!important}
+body.premium-detail .symcard p,body.premium-detail .diagnosis-card p,body.premium-detail .step p,body.premium-detail .methods p{line-height:1.85!important;letter-spacing:-.018em!important}
+body.premium-detail h1,body.premium-detail h2,body.premium-detail h3{word-break:keep-all!important;line-height:1.34!important}
+body.premium-detail .section h2{font-weight:690!important}
+body.premium-detail .topbar .brand .pipe-symbol{background:#EDF2F9!important}
+body.premium-detail .footer{background:#142338!important;color:#fff!important}
+body.premium-detail p{overflow-wrap:break-word}
+body.premium-detail .symgrid,body.premium-detail .brief-panel{align-content:start}
+@media(max-width:768px){body.premium-detail .overview .split-copy>div>p{font-size:15.5px!important;line-height:1.82!important}}
