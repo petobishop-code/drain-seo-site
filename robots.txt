@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-# Add Sitemap: https://YOUR-DOMAIN/sitemap.xml after setting SITE_URL
+Sitemap: https://drain-seo-site.vercel.app/sitemap.xml
