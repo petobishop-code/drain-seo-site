@@ -59,3 +59,40 @@ body.premium-detail .footer{background:#142338!important;color:#fff!important}
 body.premium-detail p{overflow-wrap:break-word}
 body.premium-detail .symgrid,body.premium-detail .brief-panel{align-content:start}
 @media(max-width:768px){body.premium-detail .overview .split-copy>div>p{font-size:15.5px!important;line-height:1.82!important}}
+
+
+
+/* 2026-10-21: readable high-contrast typography on navy checklist panels */
+body.premium-detail .section .care-note {
+  background-color: #17263B !important;
+  color: #F6F9FF !important;
+}
+body.premium-detail .section .care-note h3,
+body.premium-detail .section .care-note h3 * {
+  color: #FFFFFF !important;
+  opacity: 1 !important;
+}
+body.premium-detail .section .care-note small {
+  color: #BFD5FF !important;
+  opacity: 1 !important;
+}
+body.premium-detail .section .care-note ul,
+body.premium-detail .section .care-note li,
+body.premium-detail .section .care-note li * {
+  color: #E6EEFB !important;
+  opacity: 1 !important;
+}
+body.premium-detail .section .care-note li::marker {
+  color: #A6C6FF !important;
+}
+body.premium-detail .section .care-note .btn,
+body.premium-detail .section .care-note a.btn {
+  background: #2C5DB6 !important;
+  color: #FFFFFF !important;
+  border-color: #2C5DB6 !important;
+}
+body.premium-detail .section .care-note .btn:focus-visible,
+body.premium-detail .section .care-note .btn:hover {
+  background: #1D468F !important;
+  color: #FFFFFF !important;
+}
