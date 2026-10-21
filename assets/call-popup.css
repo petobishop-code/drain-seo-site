@@ -1,23 +1,19 @@
-/* Drain SEO: discreet quick-call card; shared by homepage and 80 service pages. */
-.phone-nudge{position:fixed;right:22px;bottom:24px;z-index:99990;width:min(330px,calc(100vw - 32px));padding:20px 19px 18px;background:#fff;color:#172b46;border:1px solid #dbe5f1;border-radius:17px;box-shadow:0 16px 45px rgba(20,38,67,.17),0 2px 9px rgba(20,38,67,.06);font-family:system-ui,-apple-system,'Apple SD Gothic Neo','Malgun Gothic',sans-serif;font-size:14px;line-height:1.55;animation:phone-nudge-rise .4s ease both}
+/* Compact phone popup. Keep the nav phone emphasis from the previous build. */
+.phone-nudge{position:fixed;right:22px;bottom:24px;z-index:99990;width:min(345px,calc(100vw - 30px));padding:23px 20px 18px;background:#fff;color:#172b46;border:1px solid #dbe4f2;border-radius:16px;box-shadow:0 15px 42px rgba(18,37,67,.20);font-family:system-ui,-apple-system,"Apple SD Gothic Neo","Malgun Gothic",sans-serif;font-size:14px;box-sizing:border-box;animation:phone-nudge-rise .32s ease both}
 .phone-nudge *{box-sizing:border-box}
-.phone-nudge__dismiss{position:absolute;top:9px;right:9px;width:33px;height:33px;border:0;border-radius:10px;background:transparent;color:#66778d;display:flex;align-items:center;justify-content:center;cursor:pointer;font-size:24px;line-height:1}
-.phone-nudge__dismiss:hover,.phone-nudge__dismiss:focus-visible{background:#eef3fb;color:#172b46;outline-offset:2px}
-.phone-nudge__eyebrow{display:flex;align-items:center;gap:9px;margin:0 25px 9px 0;font-size:12px;font-weight:750;letter-spacing:.01em;color:#245fd0}
-.phone-nudge__phoneicon{display:grid;place-items:center;flex:none;width:27px;height:27px;border-radius:8px;background:#e9f0ff;color:#245fd0}
-.phone-nudge__title{margin:0 8px 4px 0;font-size:19px;font-weight:800;line-height:1.32;letter-spacing:-.035em;color:#172b46}
-.phone-nudge__text{margin:0 0 13px;font-size:12.5px;line-height:1.55;color:#52627a;word-break:keep-all}
-.phone-nudge__cta{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;min-height:52px;padding:9px 12px;border-radius:11px;background:#245fd0;color:white!important;text-decoration:none!important;font-size:17px;font-weight:800;box-shadow:0 5px 10px rgba(36,95,208,.13);transition:background-color .18s ease,transform .18s ease}
-.phone-nudge__cta:hover{background:#194aaa;transform:translateY(-1px)}
-.phone-nudge__cta:focus-visible{outline:3px solid #85aafe;outline-offset:2px}
-.phone-nudge__cta svg{width:19px;height:19px;fill:currentColor}
-.phone-nudge__small{display:block;text-align:center;margin-top:7px;color:#6c7b8e;font-size:11px;letter-spacing:-.02em}
-/* Make the existing always-visible number noticeably stronger */
+.phone-nudge__dismiss{position:absolute;right:9px;top:8px;width:29px;height:29px;background:transparent;border:0;cursor:pointer;color:#7b889b;font-size:24px;line-height:1;display:flex;align-items:center;justify-content:center}
+.phone-nudge__dismiss:hover,.phone-nudge__dismiss:focus-visible{background:#eef3fb;color:#172b46;border-radius:8px}
+.phone-nudge__line{font-size:16px;font-weight:800;line-height:1.52;letter-spacing:-.048em;margin:0 16px 16px 0;color:#172b46;word-break:keep-all}
+.phone-nudge__call{width:100%;min-height:52px;border-radius:9px;display:flex;align-items:center;justify-content:center;gap:11px;background:#245fd0!important;color:#fff!important;text-decoration:none!important;font-size:20px;font-weight:800;letter-spacing:-.02em;box-shadow:0 3px 7px rgba(36,95,208,.16)}
+.phone-nudge__call:hover{background:#174aa8!important}
+.phone-nudge__call:focus-visible{outline:3px solid #88acff;outline-offset:3px}
+.phone-nudge__call svg{width:21px;height:21px;fill:currentColor;flex:none}
+/* Emphasize existing always-visible phone buttons. */
 a.nav-phone{font-weight:750!important;border:1px solid #c5d4ed!important;background:#f4f7ff!important;color:#172b46!important;border-radius:999px!important;padding:9px 13px!important}
 a.nav-phone b{color:#245fd0!important;font-size:15px!important;letter-spacing:-.025em}
 a.telhead{border:1px solid #c5d4ed!important;border-radius:999px!important;box-shadow:0 3px 14px rgba(36,95,208,.09)!important;font-weight:750!important}
 a.telhead:hover,a.nav-phone:hover{border-color:#245fd0!important}
 a.mobile-call,a.mobilecall a{font-weight:800!important}
-@keyframes phone-nudge-rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:translateY(0)}}
-@media(max-width:700px){.phone-nudge{right:12px;bottom:calc(82px + env(safe-area-inset-bottom,0px));width:min(315px,calc(100vw - 24px));padding:15px 15px 13px;border-radius:15px;box-shadow:0 10px 35px rgba(20,38,67,.18)}.phone-nudge__title{font-size:17px}.phone-nudge__text{font-size:12px;margin-bottom:11px}.phone-nudge__cta{min-height:48px;font-size:16px}.phone-nudge__eyebrow{margin-bottom:7px}.phone-nudge__small{font-size:10.5px}}
-@media(prefers-reduced-motion:reduce){.phone-nudge{animation:none}.phone-nudge__cta{transition:none}}
+@keyframes phone-nudge-rise{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+@media(max-width:700px){.phone-nudge{right:12px;bottom:calc(82px + env(safe-area-inset-bottom,0px));width:min(320px,calc(100vw - 24px));padding:19px 16px 16px}.phone-nudge__line{font-size:15px;margin-bottom:13px}.phone-nudge__call{min-height:49px;font-size:18px}}
+@media(prefers-reduced-motion:reduce){.phone-nudge{animation:none}}
