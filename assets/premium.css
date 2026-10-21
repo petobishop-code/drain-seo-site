@@ -19,3 +19,31 @@ body.premium-detail .section{padding-top:98px;padding-bottom:99px}body.premium-d
 @media(max-width:1030px){.pro-hero__grid{gap:36px}.pro-nav{gap:18px}.pro-service h3{font-size:20px}body.premium-detail .nav{gap:12px}}
 @media(max-width:800px){.pro-shell{width:min(100% - 36px,620px)}.pro-header{height:75px}.pro-header__inner{gap:12px}.pro-nav{display:none}.pro-call b{display:none}.pro-call{font-size:13px}.pro-brand strong{font-size:19px}.pro-brand small{font-size:8px}.pipe-symbol{height:39px;width:39px}.pro-hero{padding:48px 0 62px;background:#fff}.pro-hero__grid{grid-template-columns:1fr;gap:44px}.pro-small-rule{margin-top:21px}.pro-hero h1{font-size:clamp(40px,10vw,53px);margin-top:20px}.pro-hero__lead{font-size:15px}.hero-meta{gap:30px;margin-top:35px}.pro-hero__visual{min-height:400px;box-shadow:9px 9px 0 #e9eef5}.pro-hero__visual img{height:332px}.vertical-label{display:none}.visual-base{padding:14px 18px}.visual-base p{font-size:11px}.pro-section{padding:74px 0}.pro-section-heading{display:block;margin-bottom:27px}.pro-section-heading h2{font-size:32px}.pro-section-heading p{margin-top:18px;font-size:14px}.pro-service-grid{grid-template-columns:repeat(2,1fr)}.pro-service{min-height:223px;padding:22px 17px}.pro-service h3{margin-top:36px}.pro-workflow__grid{grid-template-columns:1fr;gap:36px}.work-photo{min-height:330px}.work-photo img{height:330px}.pro-filter{flex-wrap:wrap}.search-input{max-width:none;flex-basis:100%}.pro-area-grid{grid-template-columns:1fr}.pro-end__inner{display:block}.pro-end-call{margin-top:25px;width:max-content}.pro-footer .pro-shell{display:block}.pro-footer p{margin-top:13px}body.premium-detail .wrap{padding:0 18px}body.premium-detail .hero{padding:45px 0 55px}body.premium-detail .hero-layout{grid-template-columns:1fr;gap:37px}body.premium-detail .hero h1{font-size:clamp(34px,8vw,46px)}body.premium-detail .hero .lead{font-size:15px}body.premium-detail .hero-visual{min-height:340px}body.premium-detail .photo-main{height:300px}body.premium-detail .section{padding-top:69px;padding-bottom:72px}body.premium-detail .section h2{font-size:clamp(26px,6vw,34px)!important}body.premium-detail .topbar{height:73px}body.premium-detail .nav{display:none}body.premium-detail .telhead{font-size:12px;padding:10px}body.premium-detail .brandtext small{display:none}body.premium-detail .brandtext b{font-size:18px}body.premium-detail .brand{min-width:0}body.premium-detail .brand .pipe-symbol{width:37px;height:37px}}
 @media(max-width:480px){.pro-shell{width:calc(100% - 30px)}.pro-header{height:68px}.pro-brand{gap:8px}.pro-brand strong{font-size:18px}.pro-brand small{font-size:7px}.pro-call span{font-size:12px}.pro-call{gap:5px}.pro-hero h1{font-size:42px}.pro-hero__actions{gap:8px}.pro-primary,.pro-secondary{padding:0 13px;font-size:12px;min-height:48px}.hero-meta{gap:15px}.hero-meta strong{font-size:22px}.hero-meta small{font-size:10px}.pro-hero__visual{min-height:360px}.pro-hero__visual img{height:290px}.pro-service h3{font-size:18px}.pro-service p{font-size:12px}.pro-service{padding:20px 14px}.pro-workflow h2{font-size:32px}.filter-toggle button{font-size:12px;padding:9px 13px}.pro-area{padding:20px}.area-primary-link{font-size:18px}.pro-end h2{font-size:29px}.pro-end-call{width:100%}#drain-phone-popup-v2.p-call-pop,body.premium-detail #drain-phone-popup-v2{right:12px!important;bottom:80px!important;width:260px!important;padding:16px 12px 12px!important}.p-call-label,body.premium-detail .drain-pop-title{font-size:12px!important;margin-bottom:10px!important}.p-call-link,body.premium-detail .drain-pop-call{font-size:15px!important;height:43px!important}body.premium-detail .hero-visual{min-height:290px}body.premium-detail .photo-main{height:250px}body.premium-detail .brandtext small{display:none}}
+
+
+/* 2026-10-21 readability polish: home contrast and lighter typography */
+/* The global anchor inherit selector was overriding the contrast of the light contact box. */
+body.premium-home .pro-end a.pro-end-call,
+body.premium-home .pro-end a.pro-end-call:visited {
+  color:#17263B !important;
+  background:#FFFFFF !important;
+  border:1px solid #D6E0ED;
+  text-decoration:none;
+}
+body.premium-home .pro-end a.pro-end-call strong {color:#17263B !important;font-weight:650 !important;}
+body.premium-home .pro-end a.pro-end-call small {color:#56677E !important;font-size:12px !important;}
+body.premium-home .pro-end a.pro-end-call svg,
+body.premium-home .pro-end a.pro-end-call b {color:#245BB3 !important;}
+body.premium-home .pro-end a.pro-end-call:hover,
+body.premium-home .pro-end a.pro-end-call:focus-visible {border-color:#6B94D8;box-shadow:0 5px 20px rgba(12,34,61,.14);}
+/* Readable editorial weight, keeping the same type family and sizes */
+body.premium-home .pro-hero h1 {font-weight:680 !important;letter-spacing:-.053em;}
+body.premium-home .pro-section-heading h2,
+body.premium-home .pro-workflow h2,
+body.premium-home .pro-end h2 {font-weight:670 !important;letter-spacing:-.039em;}
+body.premium-home .pro-brand strong {font-weight:700 !important;}
+body.premium-home .area-primary-link {font-weight:680 !important;}
+body.premium-home .pro-service h3 {font-weight:690 !important;}
+body.premium-home .pro-process strong {font-weight:650 !important;}
+body.premium-home .pro-caption {font-weight:700 !important;}
+body.premium-home .area-index {font-weight:700 !important;}
